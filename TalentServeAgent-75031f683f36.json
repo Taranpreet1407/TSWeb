@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "talentserveagent-ktfqyq",
+  "private_key_id": "75031f683f3602c643fe1f1cbb54b8e0ed3a81ec",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCl6SuCXRO6+u43\nRRQR4LznL2hBS565I2vvWWb2/9FG9VKGtVdpgWFmxxUp1zLQLJNUIjjzM0xtH1vT\n/7nvReW5GLG+CGWnMXHUCOlzPF32uVgJnXyHh5sXzRNV/nbTlZ9eOmeqBPKBKkI9\nij+czWZcNJG6Ug7Jt63ymM6s/fXcNDJ7alryJnMoJq1VjksEpthniOq4a98lLsl6\nwAwlt/LflZJk6+zfz4uMjU6og9gqSdEMF89DuflYXBBKt9zncnuPepRrYTdQFifP\nf6aSIDo4R3SQ9xQ4tS4Xq5VeVBkG5+0on6oshi28wcdOYk5ghY9iWawrPwsN/ryx\n4hon5MmFAgMBAAECggEAB2F5nYmNfKZ4HX5Vt7vjO3eo8Cqwi3Tvcszr3zYfNcRp\nIPQFSPzH+/4ES4G20XsCLN5+4RbZogsglyxLtcDKyPK3yYfvGcKB2VhyJj27wmOZ\nbogSh6b5N9RYNV2mJKCF3/fCL9abgTKDkuBJFy0uDhEKoJrQ7JlexCmXHCwKGXso\nmvRbmncOjStGZfiHfkH/AS3SYyTEXCbNOOCoY+U0QCd3/s7UMTQiIUKZDpxOhQbv\nkLdIe/EXjmQOSQDp6cUDKmavQPS1BQdjGh11GRCJZ+vtPQXGqPvwNfSsL+WbWbWJ\nYoSKNUFp56NHK7DAdk/MkpDt5KNbPDqJUiJyhY4giwKBgQDa93SZAry+ZQRqBEVk\nNIBfbYHbMxMo1JuYFHzgD9m2HuIKDJVkP0z6LZGMESBV7enUmXNnVNaLOGE7EBBe\nZ1cG93V7F/ozPt59Yse7cItCifGKHImgbfHsYlt5btGjsfS9tBr+ZpVpHnVmfmCS\n333T+fnk5/iGFT0u8sUpQ1jGqwKBgQDB+JIBFWtJAPcDJztWsoQ6F4B9w9nrUCpo\nLM21GlaE/G80upvmnv0d07PGWUcMSEbSSY/itfuqOuH33RQ0uhDsogsDJG3pLX/U\nyojV4UuyDdcFdbMRHliN+kBV1oC5cSVQja5ydBgXXxsA+XVQ/TWqQNxsYIl7qCA0\nbqigoylwjwKBgCHfScAptjzVr5se0gUwQfOBIydffUVBrlgWQ0L98LXFjT30uF9r\nk2LYDb3XIGNqjFOA8WM4sn+S1yel0oJoBgRj316NVPz8arqGv1L1k/VVFXJB++A/\nYb8pb/EW/YMPEkcOR2a3Q8GhHpQeVJ4jyHk0ID4SzFUhj/dlQq6hZmhFAoGAc42j\nXSXnbew3OxeqD/H1N648i6+bKMXvHXRjb5orJLpFfYIV0gOxAo3VsToKS1Tba/cK\n0qJbNIQzjbeUi/y0jGPUb6DKIXlLh/bIIbI/p+j6yXPeozoSwzHsFbbdpJu1ARIG\ndISYvYOY0LHLo93UlIJjTeUMwi/cT6AEsP3CeB0CgYEAloudGNyPuIc2mkMzJgcV\nB4N4+QYtNI8/oWjvFM2w3Xl4P+4I2piOI8Yvq9y/UG4pLBC0KriboL/dlVzVNJ1/\nZ70sn/KyIA2/Zk+KR9Zea6LRZhKv/LgziJVA5pnjSL7bPO33N3a13MpgDTKkJL6+\nhCKc+lJRCWqwBAPwvd5gxbk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "talentserve-appointment@talentserveagent-ktfqyq.iam.gserviceaccount.com",
+  "client_id": "115811637057155090803",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/talentserve-appointment%40talentserveagent-ktfqyq.iam.gserviceaccount.com"
+}

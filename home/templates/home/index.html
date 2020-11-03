@@ -1,0 +1,353 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>TalentServe India</title>
+		<meta name="viewport" content="width=1024">
+        <meta name="description" content="An Hr-Edutech company website" />
+        <meta name="keywords" content="HR, AI, workshops, recruitment, training, ever-ready, Mumbai, global" /> 
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/demo.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/custom.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/owl.carousel.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'home/css/owl.theme.default.css' %}">
+		<script type="text/javascript" src="{% static 'home/js/modernizr.custom.79639.js' %}"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="{% static 'home/css/styleNoJS.css' %}" />
+		</noscript>
+    </head>
+    <body>
+		<style>
+			.file_menu {
+				display: none;
+			}
+			ul, li {
+				list-style-type: none;
+			}
+		</style>
+        <div class="fixed-action-btn">
+            <a onclick="toggler()" id="fab1" class="btn-floating">
+                <i class="material-icons">chat</i>
+        	</a>
+        </div>
+		<iframe id="iframe1" allow="microphone;" width="350" height="430"
+			src="https://console.dialogflow.com/api-client/demo/embedded/16b43d36-73a3-410f-a69e-6030b9221fe7">
+		</iframe>
+        
+        <div class="container demo-1">
+            <nav class="codrops-demos">
+				<ul class="hover">
+					<li class="hoverli">
+						<a style="font-family: 'Lobster', cursive; color:black; font-size: 25px" class="current-demo dropbtn" href="#">TalentServe</a>
+				        <ul class="file_menu">
+							<li><a href="{% url 'contactus' %}">Contact Us</a></li>
+							<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAYbOOY5URVlUSTFROFdYUzMyUk43VENONUM1MzlXSy4u">Fill up Here</a></li>
+				        </ul>
+					</li>
+				</ul>
+			</nav>
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="H"></div>
+							<h2 style="color: #000066">TalentServe</h2>
+							<blockquote>
+								<p style="font-size: 1.25em; color: #000066;">We understand the value of time and money &amp; are always there to
+									provide best
+									available services to help you grow.</p><cite style="font-size: 1em; color: #000066;">Meghhaa Woraah, Group
+										CEO</cite>
+							</blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2 style="color: #000066">About Us</h2>
+							<blockquote>
+								<p style="font-size: 1.25em; color: #000066">We are the preferred recruitment partners for clients and a trusted
+									consultant for Pune. We value the
+									requirements of our clients and offer them just one point of contact for almost all the corporate
+									requirements from time to time. Free career guidance for Fresher. Expertise in quick requirements,
+									TalentServe India's the pioneer of organized recruitment services in Pune.</p>
+									<cite style="font-size: 1.25em">Team TalentServe</cite>
+							</blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+							<h2>Inspiration</h2><br>
+							<blockquote>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+								<span style="font-weight: bold" >OUR MISSION</span><br><br>
+								We aim for ending all your corporate requirements in just one convenient call so our clients
+								can just focus on their core areas and to be at the top of their profit earning matrix. We
+								offer clients just one point of contact for almost all the corporate requirements from time to time.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+									<span style="font-weight: bold">OUR VISION</span><br><br>
+									To provide innovative professional and personalized services to candidate’s associates and clients to practice
+									quality improvement process and achieve significant improvement in business results to ensure strict compliance
+									with regard to statutory provisions.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+									<span style="font-weight: bold">OUR VALUES</span><br><br>
+									We share what we know and try to align
+									our efforts with those of others who are dedicated to achieving social impact.We value diverse perspectives and
+									strive to incorporate them in our work. We act with humility, certain we have as much to learn as to
+									contribute.
+								</p>
+							</div>
+							</blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="I"></div>
+							<h2>Our Services</h2>
+							<blockquote style="bottom : 60%">
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+										<span style="font-weight: bold">Recruitment Services</span><br><br>
+										Because the success of business relies upon talent, acquiring the most qualified people is increasingly
+										competitive.<br><br><br>
+										<span style="font-weight: bold">HR Management Services</span><br><br>
+										We have been offering HR management services on contract & regular basis. We have experienced human resource
+										personnel in our team, who manage the team of our clients on contract or regular basis.
+									</p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+										<span style="font-weight: bold">Staffing Solutions</span><br><br>
+										Innovative staffing solutions which are agile enough to meet the rapidly changing talent needs of today’s
+										world of work.<br><br><br>
+										<span style="font-weight: bold">Manpower Recruitment</span><br><br>
+										We understand that different companies have different manpower need and requirement. We have the expertise to
+										determine the exact manpower requirement of your organization.
+									</p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<p style="font-size: 1.25em; font-family: 'Tomorrow', sans-serif;">
+										<span style="font-weight: bold">HR Consultants Services</span><br><br>
+										Our endeavor remains to get you the best human resource which can prove to be a valuable asset for your
+										company.<br><br><br>
+										<span style="font-weight: bold">Training Programmes</span><br><br>
+										We specialize in making tailor made Corporate Training programs depending on your priorities and objectives.
+										Thus the number of days, hours, participants or contents can be as per your set Corporate Training goals.
+									</p>
+								</div>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="t"></div>
+							<h2>Our Workshops</h2>
+							<blockquote>
+								<div class="wrapper">
+									<div class="owl-carousel owl-theme carousel-self">
+										<div class="item">
+											<img src="{% static 'home/images/project1.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project2.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project3.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project4.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project5.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project9.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project10.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project8.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project12.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project7.jpeg' %}">
+										</div>
+										<div class="item">
+											<img src="{% static 'home/images/project11.jpeg' %}">
+										</div>
+									</div>
+								</div>
+							</blockquote>
+						</div>
+					</div>
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script type="text/javascript" src="{% static 'home/js/jquery.ba-cond.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'home/js/jquery.slitslider.js' %}"></script>
+		<script type="text/javascript" src="{% static 'home/js/owl.carousel.min.js' %}"></script>
+		<script>
+			$(document).ready(function () {
+			$(".hoverli").hover(
+			function () {
+			$('ul.file_menu').stop(true, true).slideDown('medium');
+			},
+			function () {
+			$('ul.file_menu').stop(true,true).slideUp('medium');
+			}
+			);
+
+			});
+		</script>
+        <script>
+        	var owl = $('.owl-carousel');
+        	owl.owlCarousel({
+        		items: 3,
+        		loop: true,
+        		margin: 10,
+        		autoplay: true,
+        		autoplayTimeout: 1500,
+        		autoplayHoverPause: true
+        	});
+        </script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		new WOW().init();
+        document.getElementById("iframe1").style.display = "none";
+        function toggler() {
+			console.log("toggled");
+			var x = document.getElementById("iframe1");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+        }
+		const fab = document.querySelector('.fixed-action-btn');
+        M.FloatingActionButton.init(fab, {
+        hoverEnabled : false
+        });
+    $(document).ready(function() {
+    $("#fab1").click(function(){
+    $("#pid").toggle();
+    });
+    });
+		</script>
+	</body>
+</html>
