@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TalentServe">
+    <meta name="author" content="Ashish">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+    <!-- Favicons -->
+    <link href="{% static 'images/talentservelogo.png' %}" rel="icon">
+    <link href="{% static 'images/talentservelogo.png' %}" rel="TalentServe">
+    <!-- Website Title -->
+    <title>Solopreneur</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/wickedcss.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	
+	<style>
+        .p{
+            font-size: large;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">TalentServe</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="{% static 'images/talentservelogo.png' %}" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+               
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'register' %}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'faq' %}">FAQs</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link  page-scroll" href="{% url 'home' %}#about" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                  
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'home' %}contact">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/talentserve">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/talentserve">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+    <!-- Header -->
+    
+    <header id="header" class="ex-header">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img style
+                    ="width: 50%;" src="{% static 'images/aa.png' %}" class="pulse" />
+                    <h3>Solopreneur</h3>
+                </div> <!-- end of col -->
+                
+            </div> <!-- end of row -->
+            
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="{% url 'home' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Solopreneur</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+                                
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-container last">
+                                <h3 class="turquoise ">Who is a Solopreneur?</h3>
+                                <p>Well, Solopreneur is a mixture of two words, Solo and Entrepreneur. It means that you are an entrepreneur that prefers to work alone or solo.This means that you can work with people, but you aren’t actually hiring employees with an office. You can hire contractors and simply pay by hour or project.</p>
+                            </div> <!-- end of text container -->
+                        </div> <!-- end of col-->
+                        <div class="col-md-6">
+                        </div> <!-- end of col--> 
+                    </div> <!-- end of row -->
+                    <div class="col-md-6">
+                        <div class="text-container last">
+                            <h3></h3>
+                            <p></p>
+                            <p></p>
+                        </div> <!-- end of text container -->
+                    </div>
+                    <div class="right" style="margin-left: 50%;">
+                            <h3 class="turquoise ">What's needed to be a Solopreneur at TalentServe?</h3>
+                            <p>Your business idea should be based on something you’re passionate about and can see yourself doing day in and day out for the foreseeable future.</p>
+                            <ol>
+                                <li>Candidates who are interested for HR Recruiting.</li>
+                                <li>No need of office</li>
+                                <li>No capital needed</li>
+                                <li>No budget needed</li>
+                                
+                            </ol>
+                        <!-- end of text container -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-container last">
+                            <h3 class="turquoise ">What does a Solopreneur have?</h3>
+                            <p>Solopreneurs are BYOB(Be Your Own Boss). They start and run their Entrepreneurial journey on their own from conceptualizing, planning & executing.</p>
+                            <b>Qualities of a successful solopreneur:</b>
+                            <ul>
+                                <li>Enthusiasm</li>
+                                <li>Work Ethic</li>
+                                <li>Flexibility</li>
+                                <li>Creativity</li>
+                                <li>Media savviness</li>
+                                <li>Self-Reliance</li>
+                                <li>Self-Confidence</li>
+                                <li>Grit</li>
+                                <li>People Skills</li>
+                                <li>Passion for doing over earning</li>
+                                <li>Management and Organizational skills</li>
+                            </ul>
+                        </div> <!-- end of text container -->
+                    </div>
+                    <div class="right" style="margin-left: 50%;">
+                        <h3 class="turquoise ">Eligibility</h3>
+                        <ul>
+                            <li>Should understand HR Business.</li>
+                            <li>Wants to start a business with a less than limited capital.</li>
+                            <li>Should understand work ethics and a business responsibilities.</li>
+                            <li>Passionate enough to work for their dreams.</li>
+                            <li>Number 1 Goal oriented.</li>
+                            <li>Willin to work part time (or) as a side business.</li>
+                            <li>Any fresher with Entrepreneurial mindset can apply too.</li>
+                        </ul>
+                    <!-- end of text container -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-container last">
+                            <h3 class="turquoise "> Benefits of being a Solopreneur</h3>
+                            <ul>
+                                <li>Flexibility of your working time and opportunity of working from Home.</li>
+                                <li>Earn your desired income.(Know your capabilities to earn compete with yourself.)</li>
+                                <li>Learn to be Self-Dependant(<i>Aatmanirbhar</i>)</li>
+                                <li>Become a businessman/businesswoman without an office.</li>
+                            </ul>
+                        </div> <!-- end of text container -->
+                    </div>
+                    <!--<h2 style="text-align: center;background-color: whitesmoke;padding: 2em;">Congratulations!!</h2><br /><br />-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="btn-outline-reg back" style="margin-left: 44%;" href="{% url 'home' %}#about">Testimonials</a><br /><br /><br />
+                    <p style="font-size: x-large;margin-left: 6.5em;"> Talentserve is partnering with Solopreneurs who are interested in HR Recruitment.</p><br /><br />
+                    
+                    
+                    <div class="container p-3 my-3 bg-primary text-white">
+                      <p class="text-white">1. TalentServe recieves a detailed Job Description from the employers.</p>
+                    </div>
+                    
+                    
+                     <div class="container p-3 my-3 bg-primary text-white">
+                                          <p class="text-white">2 .These job descriptions will be given to our partnered Solopreneurs.</p>
+                                        </div>
+                                        
+                    
+                    
+                   <div class="container p-3 my-3 bg-primary text-white">
+                                                             <p class="text-white">3.These Solopreneurs will Select and Submit the top Candidates eligible for the job.</p>
+                                                           </div>
+                                                           <div class="container p-3 my-3 bg-primary text-white">
+                                                                                                                        <p class="text-white">4. The job seeking candidates gets placed and the Solopreneurs get paid.</p>
+                                                                                                                      </div>
+                    
+                    
+                    
+    
+                    
+                    
+                    
+                    
+                    
+    
+                    
+                    <br /><br /><br /><br />
+                    <div id="logo" style="background-color:whitesmoke;height: 15em;">
+                    <h1 style="text-align: center;padding-top: 1em;">Be a Solopreneur , Be </h1><a href="{% url 'solopreneur' %}" ><img style
+                    ="width: 40%;margin-left: 30em;" src="{% static 'images/crop.png' %}" alt="Aatmanirbhar" class="pulse"/></a></div>
+                    
+                    <a class="btn-outline-reg back" style="margin-left: 1em;" href="{% url 'home' %}">BACK</a>
+                    <a class="btn-outline-reg back" href="{% url 'faq' %}">FAQs</a>
+                    
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="{% url 'home' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Solopreneur</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About TalentServe</h4>
+                        <p>We're passionate about offering the best human resource services to our customers</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="">Terms & Conditions</a>, <a class="turquoise" href="">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.facebook.com/talentserve">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://twitter.com/talentserve">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.youtube.com/channel/UCGiDUX3MdPYO-GJFCjzr_cw">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.instagram.com/talentserve/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.linkedin.com/company/talentserve-india-pvt-ltd">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="{% url 'home' %}">TalentServe</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+	
+    <!-- Scripts -->
+  <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+  <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+    
+</body>
+</html>

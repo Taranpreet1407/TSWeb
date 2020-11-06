@@ -1,0 +1,668 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="TalentServe">
+  <meta name="author" content="Ashish">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="" /> <!-- website name -->
+  <meta property="og:site" content="" /> <!-- website link -->
+  <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+  <!-- Favicons -->
+  <link href="{% static 'images/talentservelogo.png' %}" rel="icon">
+  <link href="{% static 'images/talentservelogo.png' %}" rel="TalentServe">
+  <!-- Website Title -->
+  <title>JOB FAQ's</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/wickedcss.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+  <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+  <!-- Preloader -->
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <!-- end of preloader -->
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="{% url 'home' %}">TalentServe</a> -->
+
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="{% static 'images/talentservelogo.png' %}" alt="alternative"></a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'home' %}#header">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'home' %}#services">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'register' %}">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'faq' %}">FAQs</a>
+        </li>
+
+        <!-- Dropdown Menu -->
+        
+        <!-- end of dropdown menu -->
+
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'home' %}#contact">Contact</a>
+        </li>
+      </ul>
+      <span class="nav-item social-icons">
+        <span class="fa-stack">
+          <a href="https://www.facebook.com/talentserve">
+            <i class="fas fa-circle fa-stack-2x facebook"></i>
+            <i class="fab fa-facebook-f fa-stack-1x"></i>
+          </a>
+        </span>
+        <span class="fa-stack">
+          <a href="https://twitter.com/talentserve">
+            <i class="fas fa-circle fa-stack-2x twitter"></i>
+            <i class="fab fa-twitter fa-stack-1x"></i>
+          </a>
+        </span>
+      </span>
+    </div>
+  </nav> <!-- end of navbar -->
+  <!-- end of navbar -->
+
+
+  <!-- Header -->
+  <header id="header" class="ex-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Frequently Asked Questions</h1>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </header> <!-- end of ex-header -->
+  <!-- end of header -->
+
+
+  <!-- Breadcrumbs -->
+  <div class="ex-basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumbs">
+            <a href="{% url 'home' %}">Home</a><i class="fa fa-angle-double-right"></i><span>FAQs</span>
+          </div> <!-- end of breadcrumbs -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of ex-basic-1 -->
+  <!-- end of breadcrumbs -->
+  <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+    <div class="container">
+
+      <h2>Frequently Asked Questions </h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                What is the need of career counseling session?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body px-3 mb-4">
+              <p>Due to pandemic there has been a confusion which is arising between the Job seekers and the corporate
+                companies. Even the corporate policies have changed. Due to this we have taken this initiative that the
+                job seekers will go through our counseling session which would clear their doubts which would help them
+                in their interview as well. </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                What would be the salary after getting a job?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+              <p>The salary will be decided by the company, the post, the CGPA, the qualifications and the position you
+                have been selected for. Looking forward we are expecting a minimum salary of 2.4 Lakh per annum to 6
+                Lacs per annum.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                Is the Job work from home?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>It always depend on the company weather it has WFH options for the freshmen candidates or not.
+                It even depends on the state government laws too.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse3" aria-expanded="true" aria-controls="collapse2">
+                What if we have doubts ? how ill our doubts be addressed ?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>We have an escaltion chatbot where you can address all your doubts. We will respond you as soon as
+                possible.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse4" aria-expanded="true" aria-controls="collapse2">
+                What if someone misbehaves?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>TalentServe has a strict disciplinary policy where we do not entertain any indiscipline either from our
+                employees or from interns. Strict actions will be taken on an immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse5" aria-expanded="true" aria-controls="collapse2">
+                When will the job seekers attend the career counseling session?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>As soon and the Job Seeker registers , he/she will get an automated email from our side regarding their
+                session date and time within 5-7 days. After the session is over within a week they will start getting
+                calls for interviews.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse6" aria-expanded="true" aria-controls="collapse2">
+
+
+                Who can Enroll for the career counseling session?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>Any Jobseeker/ Students who is of an age 18+ with 0-2 Years Experience can apply. The Jobseeker /
+                Students Can be MBA( Pass out or Pursuing), Engineering( Pass out or Pursuing), UG eg.BA, BCOM, BBA ,
+                BMM, BMS , Intermediate passouts, 12th passouts etc(Pass out or Pursuing) can enroll for this session.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse7" aria-expanded="true" aria-controls="collapse2">
+                Is a student eligible for part time/ internships?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>Yes! The students who are not looking for jobs are eligible for part time jobs as well as internships
+                in various companies. These jobs will be assured paid. There will be opportunities where you get these
+                Jobs in your city. If you get a part time job away from your location then there is a good chance of
+                working from home.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse8" aria-expanded="true" aria-controls="collapse2">
+                Why Should we enroll with TalentServe for seeking a Job?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>We are here with a not for profit initiative where we would help you land up with your desired job. Our
+                state of the art algorithm is built in such a way that it differentiates your profile from others and
+                derives the best suitable company for you. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse9" aria-expanded="true" aria-controls="collapse2">
+                Why should they opt for this enrollment?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>Post COVID-19, everyone is looking for a 2nd option, the situation is also the same for all the
+                JobSeekers/Students who are looking for Job or Career Management Session. They would also explore
+                practical knowledge from this session which would help them to know about “what Industry demands and how
+                to prepare the answers accordingly during interview, how to prepare a great CV/Resume etc.” </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse10" aria-expanded="true" aria-controls="collapse2">
+                What is the Job description?
+
+              </a>
+            </h3>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>We presently have around 20,000 job openings across India. Few of them include IT, Marketing, Business
+                Development , BPOs , KPOs, Hospitality Industry, Pharmaceutical Industry, FMCGs and many more to come
+                across India . Depending on the preference of their studies the candidate would get the information over
+                the email and that would be copied to you for the interview process. The candidate will be attending the
+                following interviews and you can follow up with them if required. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                href="#collapse11" aria-expanded="true" aria-controls="collapse3">
+                What would be the CTC/ Yearly Salary of Job Seekers?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body px-3 mb-4">
+              <p>The monthly Gross Salary for the Job Seekers would range from 2.4 Lacs to 6.0 Lacs which is depending
+                on their qualifications, location, performence during interview and the department the jobseeker is
+                selected for. </p>
+            </div>
+          </div>
+        </div>
+      
+
+      <div class="panel panel-default">
+        <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+          <h3 class="panel-title">
+            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+              href="#collapse12" aria-expanded="true" aria-controls="collapse3">
+              Is there a Full Time/ Part Time also available?
+            </a>
+          </h3>
+        </div>
+        <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+          <div class="panel-body px-3 mb-4">
+            <p>Generally this is a Full Time Role, However now a day’s companies are more inclined towards work
+              completion rather than considering the fork for whole day, like we are putting the performance. So this is
+              completely on company’s policy. As the new rules might come for Part Time too. </p>
+          </div>
+        </div>
+      </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse13"
+            aria-expanded="true" aria-controls="collapse3">
+            What is our need to pay Rs 51.00 when you have taken a Not for profit social initiative?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+        <div class="panel-body px-3 mb-4">
+          <p>Let us clear you about this. Let us say that the session is for free and few candidates fill the
+            registration and do not attend the Counseling session and the interviews. We have taken a survey of around
+            20,000 job seekers and we came to know that people do not care for something which they get for free. Thus,
+            we have kept it for a nominal cost of Rs. 51.00 which is affordable for each one of our pockets. </p>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse14"
+            aria-expanded="true" aria-controls="collapse3">
+            Which companies are hiring and what is the role?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+        <div class="panel-body px-3 mb-4">
+          <p>There are multiple companies which have collaborated with us for multiple roles which they have in their
+            organization including Technical and Non-Technical for this Not for Profit Social Initiative. Some of the
+            Companies who are Hiring are given below.
+            <ul>
+              <li>J.P. Morgan</li>
+              <li>Morgan Stanley</li>
+              <li>Indigo Airlines</li>
+              <li>Interglobe Technologies</li>
+              <li>Teleperformance</li>
+              <li>Tech Mahindra</li>
+              <li>Concentrix</li>
+              <li>Flipkart</li>
+              <li>Barclays</li>
+              <li>HCL</li>
+              <li>Axis Bank</li>
+              <li>Kotak Mahindra Bank</li>
+              <li>Yes Bank</li>
+              <li>Indusind Bank</li>
+              <li>HDFC Bank</li>
+              <li>BigBasket and so on</li>
+            </ul>
+            However, we recommend you to take this as an example because post the career counseling session all the Job
+            Seeker applications will be emailed to the companies with respect to the position and location they have and
+            then the candidates will get email accordingly for Interview which they need to attend. </p>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse15"
+            aria-expanded="true" aria-controls="collapse3">
+            Is TalentServe trust worthy ?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body px-3 mb-4">
+          <p>TalentServe is a private limited company. The Name is TalentServe India Private Limited. This is a Social
+            Initiative where TalentServe has taken a not for profit social initiative to create jobs for 1,00,000 Lakh
+            Job Seekers across India in various sectors and locations . We are across all the social media platforms
+            with name TalentServe (facebook, Instagarm, Youtube, Twitter and LinkedIn). You can also visit us @
+            www.talentserve.org or <a href="www.talentserve.in">TalentServe</a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse16"
+            aria-expanded="true" aria-controls="collapse3">
+            Many of them do not believe this initiative?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body px-3 mb-4">
+          <p>Statistics have proven that each year there are around 50,00,000 graduates in India who are looking for a
+            job each year. So when we take an account of graduates from 2018-19,2019-20,2020-21 there are around
+            1,50,00,000 fresher JobSeekers who are looking for a job. Presently as we all know that around 4-6 Crores
+            Indians have lost their Jobs due to the pandemic situations. We at TalentServe India Private Limited do not
+            force our social initiative on anyone. We would suggest visiting our website so that they can believe in our
+            initiative.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse17"
+            aria-expanded="true" aria-controls="collapse3">
+            How will someone believe TalentServe where the colleges are failing to provide jobs to their students?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body px-3 mb-4">
+          <p>The average interviews provided by colleges for a student is 6. We are just increasing the percentage of a
+            jobseeker getting a job by getting a chance to attend 5 more interviews. Thus increasing the percentage of a
+            Job seeker getting a job by 220%. We are confident that we can provide these jobs. It depends on a jobseeker
+            and his preparation for an interview.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+        <h3 class="panel-title">
+          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse18"
+            aria-expanded="true" aria-controls="collapse3">
+            How do the JobSeekers/ Students make payment?
+          </a>
+        </h3>
+      </div>
+      <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+        <div class="panel-body px-3 mb-4">
+          <p>Jobseekers / Students should visit our website and make the payment only through the Payment gateway after
+            registering all their details on our website. This Payment gateway has options of Internet Banking , payment
+            through debitcard , credit card and the registered TalentServe UPI ID or QR Code. No transaction to Interns
+            personal Account will be entertained.<br />
+            Finally we are sharing with you a flyer and a Video which would help you get your work done easily by
+            posting it on your social media like Instagram(feed and status), Twitter, WhatsApp (Status), Facebook (feed
+            and status) and LinkedIn. Post it and the task will get even more easier to you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+    </div>
+  </section>
+
+  <a class="btn-outline-reg back" style="margin-left: 1em;" href="{% url 'home' %}">BACK</a>
+  </div> <!-- end of col-->
+  </div> <!-- end of row -->
+  </div> <!-- end of container -->
+  </div> <!-- end of ex-basic-2 -->
+  <!-- end of privacy content -->
+
+
+  <!-- Breadcrumbs -->
+  <div class="ex-basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumbs">
+            <a href="{% url 'home' %}">Home</a><i class="fa fa-angle-double-right"></i><span>FAQs</span>
+          </div> <!-- end of breadcrumbs -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of ex-basic-1 -->
+  <!-- end of breadcrumbs -->
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-col">
+            <h4>About TalentServe</h4>
+            <p>We're passionate about offering the best human resource services to our customers</p>
+          </div>
+        </div> <!-- end of col -->
+        <div class="col-md-4">
+          <div class="footer-col middle">
+            <h4>Important Links</h4>
+            <ul class="list-unstyled li-space-lg">
+              
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">Read our <a class="turquoise" href="">Terms &
+                    Conditions</a>, <a class="turquoise" href="">Privacy Policy</a></div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- end of col -->
+        <div class="col-md-4">
+          <div class="footer-col last">
+            <h4>Social Media</h4>
+            <span class="fa-stack fa-lg">
+              <a href="https://twitter.com/talentserve">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <a href="https://twitter.com/talentserve">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <a href="#https://www.youtube.com/channel/UCGiDUX3MdPYO-GJFCjzr_cw">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <a href="https://www.instagram.com/talentserve/">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack fa-lg">
+              <a href="https://www.linkedin.com/company/talentserve-india-pvt-ltd">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+              </a>
+            </span>
+          </div>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of footer -->
+  <!-- end of footer -->
+
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="p-small">Copyright © 2020 <a href="{% url 'home' %}">TalentServe</a> - All rights reserved</p>
+        </div> <!-- end of col -->
+      </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of copyright -->
+  <!-- end of copyright -->
+
+
+  <!-- Scripts -->
+  <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+  <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+
+</body>
+
+</html>

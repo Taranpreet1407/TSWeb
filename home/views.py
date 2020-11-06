@@ -6,27 +6,36 @@ from .models import userdata, workshop
 
 wshops = workshop.objects.all()
 
-def home(request):
-    return render(request,'home/index.html')
-
 def beta(request):
-    return render(request, 'home/index_10_2020_new.html')
-
-def home2(request):
-    print(wshops)
     return render(request,'home/index.html')
+
+def home(request):
+    return render(request, 'home/index_10_2020.html')
+
+def saarathi(request):
+    return render(request, 'home/saarathi_10_2020.html')
+
+def solopreneur(request):
+    return render(request, 'home/solopreneur_10_2020.html')
+
+def register(request):
+    return render(request, 'home/register_10_2020.html')
+
+def faq(request):
+    return render(request, 'home/FAQ.html')
+
+def faqi(request):
+    return render(request, 'home/FAQI.html')
+
+def faqj(request):
+    return render(request, 'home/FAQJ.html')
+
 
 def contactus(request):
     return render(request, 'home/contact-us.html')
 
 def register(request):
     return render(request, 'home/Register_10_2020.html')
-
-def terms(request):
-    return render(request, 'home/terms-conditions_10_2020.html')
-
-def privacypolicy(request):
-    return render(request, 'home/privacy-policy_10_2020.html')
 
 def send_email(to,subject, msg):
     try:

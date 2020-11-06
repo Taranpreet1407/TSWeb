@@ -1,0 +1,601 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TalentServe">
+    <meta name="author" content="Ashish">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+    <!-- Favicons -->
+    <link href="{% static 'images/talentservelogo.png' %}" rel="icon">
+    <link href="{% static 'images/talentservelogo.png' %}" rel="TalentServe">
+    <!-- Website Title -->
+    <title>Saarathii</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/wickedcss.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	
+	<style>
+        .p{
+            font-size: large;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">TalentServe</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="{% static 'images/talentservelogo.png' %}" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                
+               
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'register' %}">Register</a>
+                </li>
+                
+                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#container">Vision</a>
+                                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'faq' %}">FAQs</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link  page-scroll" href="{% url 'home' %}#about" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                  
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'home' %}#contact">Contact</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/talentserve">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/talentserve">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+    <!-- Header -->
+    
+    <header id="header" class="ex-header">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img style
+                    ="width: 50%;" src="{% static 'images/sar.png' %}" class="pulse" />
+                    <h3></h3>
+                </div> <!-- end of col -->
+                
+            </div> <!-- end of row -->
+            
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Saarathii</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+                               <div class="container">      
+                                
+                                <h1  class="sarthi" style="text-align:center;">SAARATHII</h1>
+                            <p>Since the pandemic has approached in India, lot of things have changed including the Employment Rate which has also impacted the GDP which is the lowest in last 50 years i.e. -23.9%. 
+                                
+                               
+                               Based on our market research and conversations with around 
+                               
+                               <b>20,000</b> Jobseekers, students, working professionals and the corporate companies, we came to know that there has been a change in the corporate policies and the hiring structure. Thus, creating a confusion between jobseekers and the companies. 
+                               
+                                <br><br>
+                               
+                               Thus, TalentServe has One-Stop simple solution where we 
+                               
+                               have taken a Not For Profit Initiative to create the positive 
+                               
+                               impact in Indian Economy by creating job across India. 
+                               
+                                
+                               
+                               Here, the Jobseekers will be attending a Career Management 
+                               
+                               Session. This session will help them clear their doubts regarding their career and the new normal opted by the companies. Once the session is over the Jobseekers will get an opportunity to attend 5 Job interviews with 5 different companies.  </p>    
+                                
+                                
+                                <h3 class="sarthi">"TalentServe’s state-of-the-art algorithm will help you land with best curated job that suits your passion."</h3>
+                                
+                                
+                                
+                                
+                                </div>
+                                <br><br><br>
+                                
+                                <div class="container">
+                                                                
+                                                                  <div class="embed-responsive embed-responsive-16by9">
+                                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j8CgDuSMkFE"></iframe>
+                                                                  </div>
+                                                                </div>
+                                
+                                
+                               <br><br>
+                                <div class="container">
+                                
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/urRWZZIgLCk"></iframe>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                                
+                                
+                                
+                             <div class="basic-1">
+                                     <div class="container">
+                                         <div class="row">
+                                             <div class="col-lg-6">
+                                                 <div class="text-container">
+                                                     <h2><span class="turquoise">WHAT DOES THE JOBSEEKER ASK HIMSELF WHILE PREPARING FOR AN INTERVIEW?</span></h2>
+                                                     
+                                                     <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Explore More</a>
+                                                 </div> <!-- end of text-container -->
+                                             </div> <!-- end of col -->
+                                             <div class="col-lg-6">
+                                                 <div class="image-container">
+                                                     <img class="img-fluid" src="{% static 'images/details-1-office-worker.svg' %}" alt="alternative">
+                                                 </div> <!-- end of image-container -->
+                                             </div> <!-- end of col -->
+                                         </div> <!-- end of row -->
+                                     </div> <!-- end of container -->
+                                 </div>    
+                                
+                                
+                                <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+                                        <div class="container">
+                                            <div class="row">
+                                                <button title="Close (Esc)" type="button" class="mfp-close x-button">X</button>
+                                                <div class="col-lg-8">
+                                                    <div class="image-container">
+                                                        <img class="img-fluid" src="{% static 'images/sar.png' %}" alt="alternative">
+                                                    </div> <!-- end of image-container -->
+                                                </div> <!-- end of col -->
+                                                <div class="col-lg-4">
+                                                    <h3>SAARATHII</h3>
+                                                    <hr>
+                                                    
+                                                    
+                                                    
+                                                    <ul class="list-unstyled li-space-lg">
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">What are the opportunities in the market? 
+                                                                                                                </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">How to prepare? </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">Work like an HR recruiter.</div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">Is the resume upto the mark? </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">Am I prepared with latest trends & technologies? </div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-check"></i><div class="media-body">Should I go ahead with higher education? </div>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div> <!-- end of col -->
+                                            </div> <!-- end of row -->
+                                        </div> <!-- end of container -->
+                                    </div> <!-- end of lightbox-basic -->
+                                    <!-- end of details lightbox 1 -->
+                                
+                                
+                                
+                                
+                                
+                                 <div class="basic-1">
+                                                                     <div class="container">
+                                                                         <div class="row">
+                                                                             <div class="col-lg-6">
+                                                                                 <div class="text-container">
+                                                                                     <h2><span class="turquoise">WHAT ARE THE MISTAKES THAT A JOBSEEKER DOES?</span></h2>
+                                                                                     
+                                                                                     <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">Explore More</a>
+                                                                                 </div> <!-- end of text-container -->
+                                                                             </div> <!-- end of col -->
+                                                                             <div class="col-lg-6">
+                                                                                 <div class="image-container">
+                                                                                     <img class="img-fluid" src="{% static 'images/sar.png' %}" alt="alternative">
+                                                                                 </div> <!-- end of image-container -->
+                                                                             </div> <!-- end of col -->
+                                                                         </div> <!-- end of row -->
+                                                                     </div> <!-- end of container -->
+                                                                 </div>    
+                                                                
+                                                                
+                                                                <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <button title="Close (Esc)" type="button" class="mfp-close x-button">X</button>
+                                                                                <div class="col-lg-8">
+                                                                                    <div class="image-container">
+                                                                                        <img class="img-fluid" src="{% static 'images/sar.png' %}" alt="alternative">
+                                                                                    </div> <!-- end of image-container -->
+                                                                                </div> <!-- end of col -->
+                                                                                <div class="col-lg-4">
+                                                                                    <h3>SAARATHII</h3>
+                                                                                    <hr>
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    <ul class="list-unstyled li-space-lg">
+                                                                                        <li class="media">
+                                                                                            <i class="fas"></i>
+                                                                                            <div class="media-body">Confuses himself/herself.
+                                                                                                                                                </div>
+                                                                                        </li>
+                                                                                        <li class="media">
+                                                                                            <i class="fas"></i><div class="media-body">Lack of trust.  </div>
+                                                                                        </li>
+                                                                                        <li class="media">
+                                                                                            <i class="fas "></i><div class="media-body">Ends up with lots of confusing advices. </div>
+                                                                                        </li>
+                                                                                        
+                                                                                    </ul>
+                                                                                    
+                                                                                </div> <!-- end of col -->
+                                                                            </div> <!-- end of row -->
+                                                                        </div> <!-- end of container -->
+                                                                    </div> <!-- end of lightbox-basic -->
+                                                                    <!-- end of details lightbox 1 -->
+                                                                
+                                                                
+                                                                
+                                
+                                
+                                
+                                
+                                <div class="basic-1">
+                                                                                                     <div class="container">
+                                                                                                         <div class="row">
+                                                                                                             <div class="col-lg-6">
+                                                                                                                 <div class="text-container">
+                                                                                                                     <h2><span class="turquoise">JOBSEEKER’S MOTIVE VISION OF THIS COUNSELLING SESSION</span></h2>
+                                                                                                                     
+                                                                                                                     <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">Explore More</a>
+                                                                                                                 </div> <!-- end of text-container -->
+                                                                                                             </div> <!-- end of col -->
+                                                                                                             <div class="col-lg-6">
+                                                                                                                 <div class="image-container">
+                                                                                                                     <img class="img-fluid" src="{% static 'images/details-1-office-worker.svg' %}" alt="alternative">
+                                                                                                                 </div> <!-- end of image-container -->
+                                                                                                             </div> <!-- end of col -->
+                                                                                                         </div> <!-- end of row -->
+                                                                                                     </div> <!-- end of container -->
+                                                                                                 </div>    
+                                                                                                
+                                                                                                
+                                                                                                <div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+                                                                                                        <div class="container">
+                                                                                                            <div class="row">
+                                                                                                                <button title="Close (Esc)" type="button" class="mfp-close x-button">X</button>
+                                                                                                                <div class="col-lg-8">
+                                                                                                                    <div class="image-container">
+                                                                                                                        <img class="img-fluid" src="{% static 'images/sar.png' %}" alt="alternative">
+                                                                                                                    </div> <!-- end of image-container -->
+                                                                                                                </div> <!-- end of col -->
+                                                                                                                <div class="col-lg-4">
+                                                                                                                    <h3>SAARATHII</h3>
+                                                                                                                    <hr>
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    <ul class="list-unstyled li-space-lg">
+                                                                                                                        <li class="media">
+                                                                                                                            <i class="fas"></i><div class="media-body">To make a Positive Impact to bridge the gap 
+                                                                                                                                                                       
+                                                                                                                                                                       in their career. 
+                                                                                                                                                                                </div>
+                                                                                                                        </li>
+                                                                                                                        <li class="media">
+                                                                                                                            <i class="fas"></i><div class="media-body">Enhancing the Leadership Qualities.   </div>
+                                                                                                                        </li>
+                                                                                                                        <li class="media">
+                                                                                                                            <i class="fas "></i><div class="media-body">Preparing for a Go-Getter attitude and 
+                                                                                                                                                                        
+                                                                                                                                                                        Work in a Goal-Oriented Approach. 
+                                                                                                                                                                         </div>
+                                                                                                                        </li>
+                                                                                                                        
+                                                                                                                    </ul>
+                                                                                                                    
+                                                                                                                </div> <!-- end of col -->
+                                                                                                            </div> <!-- end of row -->
+                                                                                                        </div> <!-- end of container -->
+                                                                                                    </div> <!-- end of lightbox-basic -->
+                                                                                                    <!-- end of details lightbox 1 -->
+                                                                                                
+                                                                                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="text-container">
+                                                        <h2><span class="turquoise">VISION OF THIS COUNSELLING SESSION</span></h2>
+                                                       <ul>
+                                                        <li><h5>How to prepare and present for an interview? </h5></li>
+                                                        <li><h5> 
+                                                       How to prepare an effective CV for a job? </h5></li>
+                                                       <li><h5>Changes in the Corporate Policies</h5></li>
+                                                       <li><h5>Skills neededfor the new normal </h5></li>
+                                                       </ul>
+                                                       
+                                                                
+                                                        
+                                                    </div> <!-- end of text-container -->
+                                                </div> <!-- end of col -->
+                                                <div class="col-lg-6">
+                                                    <div class="image-container">
+                                                        <img class="img-fluid" src="{% static 'images/sar.png' %}" alt="alternative">
+                                                    </div> <!-- end of image-container -->
+                                                </div> <!-- end of col -->
+                                            </div> <!-- end of row -->
+                                        </div> <!-- end of container -->
+                                    </div> <!-- end of basic-1 -->
+                                
+                                
+                                
+                                
+                             
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                       
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="container">
+                    <h4 class="sarthi">This counselling session is designed in 
+                                       
+                                       such a way that it is affordable for each 
+                                       
+                                       and every one who are looking for a job 
+                                       
+                                       with a flat discount of 94.9%.</h4>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="container">
+                    
+                    <img src="{% static 'images/CODE.jpg' %}" class="img-fluid" alt="Responsive image">
+                    <a class="btn-outline-reg back" style="margin-left: 1em;" href="{% url 'register' %}">Register Here</a>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                   
+                    
+                    <a class="btn-outline-reg back" style="margin-left: 1em;" href="{% url 'faqj' %}">JOB FAQ's</a>
+                    <a class="btn-outline-reg back" href="{% url 'faqi' %}">Intern FAQs</a>
+                    
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="{% url 'home' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Solopreneur</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About TalentServe</h4>
+                        <p>We're passionate about offering the best human resource services to our customers</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="">Terms & Conditions</a>, <a class="turquoise" href="">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.facebook.com/talentserve">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://twitter.com/talentserve">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.youtube.com/channel/UCGiDUX3MdPYO-GJFCjzr_cw">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.instagram.com/talentserve/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <a href="https://www.linkedin.com/company/talentserve-india-pvt-ltd">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="{% url 'home' %}">TalentServe</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+	
+    <!-- Scripts -->
+  <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+  <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+    
+</body>
+</html>

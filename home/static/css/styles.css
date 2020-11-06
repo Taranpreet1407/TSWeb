@@ -44,16 +44,6 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
-
-.Disabled{
-	pointer-events: none;
-	cursor: not-allowed;
-	opacity: 0.65;
-	filter: alpha(opacity=65);
-	-webkit-box-shadow: none;
-	box-shadow: none;
-  }
-
 body,
 html {
     width: 100%;
@@ -1203,6 +1193,25 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
+.video-container {
+    overflow: hidden;
+    position:center;
+    width:50%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
   
 .basic-3 .video-play-button:before {
 	content: "";
@@ -2191,7 +2200,18 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 }
-.row{
-	padding: 1em;
-}
 /* end of min-width width 1200px */
+
+
+.sarthi
+{
+color: #e6b800;
+
+}
+
+ .center { 
+        text-align:center;
+        width:100%; 
+    } 
+    
+    
