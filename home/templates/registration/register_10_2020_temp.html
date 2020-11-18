@@ -1,0 +1,47 @@
+<html>
+    <h2>Registration form</h2>
+    <form method="POST" enctype="multipart/form-data" action ="{% url 'register' %}">
+        {% csrf_token %}
+        <label>Name
+            <input type="text" name="name" required>
+        </label><br>
+        <label>Email
+            <input type="email" name="email" required><span>*this will be your username*</span>
+        </label><br>
+        <label>Password
+            <input type="password" name="password" required>
+        </label><br>
+        <label>Mobile Number
+            <input type="tel" name="phone" required>
+        </label><br>
+        <label>City
+            <input type="text" name="city" required>
+        </label><br>
+        <label>State
+            <input type="text" name="state">
+        </label><br>
+        <label>College
+            <input type="text" name="college"><span>*if studying*</span>
+        </label><br>
+        <label>Stream
+            <input type="text" name="stream">
+        </label><br>
+        <label>Passing Year
+            <input type="number" name="year">
+        </label><br>
+        <label>Resume
+            <input type="file" name="resume">
+        </label><br>
+        <label>Are you ready to relocate?
+            <select name="relocate">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+        </label><br>
+        <label>Where did you hear of us?
+            <select name="relocate">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+        </label><br>
+
+    </form>
+</html>

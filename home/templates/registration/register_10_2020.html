@@ -147,18 +147,20 @@
 
                             <!-- Privacy Form -->
                             <div class="form-container">
-                                <form id="privacyForm" data-toggle="validator" data-focus="false">
+                                <form  data-toggle="validator" data-focus="false" method="POST"
+                                    action="{% url 'register' %}" enctype="multipart/form-data">
+                                    {% csrf_token %}
                                     <div class="form-group">
-                                        <input type="text" class="form-control-input" id="pname" required>
-                                        <label class="label-control" for="pname">Name</label>
+                                        <input type="text" class="form-control-input" id="name" name ="name" required>
+                                        <label class="label-control" for="pname">Full Name</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control-input" id="pname" required>
+                                        <input type="date" class="form-control-input" id="pname" name ='dob' required>
                                         <label class="label-control" for="pname">Date of Birth</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <input type="text" class="form-control-input" id="pname" required>
                                         <label class="label-control" for="pname">College Name
                                         </label>
@@ -168,97 +170,137 @@
                                         <input type="text" class="form-control-input" id="pname" required>
                                         <label class="label-control" for="pname">Stream/Department</label>
                                         <div class="help-block with-errors"></div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="form-group">
-                                        <input type="email" class="form-control-input" id="pemail" required>
+                                        <input type="email" class="form-control-input" id="pemail" name='email' required>
                                         <label class="label-control" for="pemail">Email</label>
+                                        <span>*This will be your username*</span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control-input" id="pname" required>
+                                        <input type="password" class="form-control-input" id="password" name='password'
+                                            required>
+                                        <label class="label-control" for="password">Password</label>
+                                        <span>*This will be your password*</span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control-input" id="mobile_no" name="mobile_no"
+                                            required>
+                                        <label class="label-control" for="mobile_no">Mobile Number</label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-input" id="pname" name='city' required>
                                         <label class="label-control" for="pname">City</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control-select" id="pselect" required>
+                                        <select class="form-control-select" id="pselect" name='state' required>
                                             <option class="select-option" value="" disabled selected>State</option>
-                                            <option class="select-option" value="Delete data">Andhra Pradesh</option>
-                                            <option class="select-option" value="Show me data">Arunachal Pradesh</option>
-                                            <option class="select-option" value="Show me data">Assam</option>
-                                            <option class="select-option" value="Show me data">Bihar</option>
-                                            <option class="select-option" value="Show me data">Chhatisgarh</option>
-                                            <option class="select-option" value="Show me data">Goa</option>
-                                            <option class="select-option" value="Show me data">Gujurat</option>
-                                            <option class="select-option" value="Show me data">Haryana</option>
-                                            <option class="select-option" value="Show me data">Himachal Pradesh</option>
-                                            <option class="select-option" value="Show me data">Jharkhand</option>
-                                            <option class="select-option" value="Show me data">Karnataka</option>
-                                            <option class="select-option" value="Show me data">Kerala</option>
-                                            <option class="select-option" value="Show me data">Madhya Pradesh</option>
-                                            <option class="select-option" value="Show me data">Maharastra</option>
-                                            <option class="select-option" value="Show me data">Manipur</option>
-                                            <option class="select-option" value="Show me data">Meghalaya</option>
-                                            <option class="select-option" value="Show me data">Mizoram</option>
-                                            <option class="select-option" value="Show me data">Nagaland</option>
-                                            <option class="select-option" value="Show me data">Odisha</option>
-                                            <option class="select-option" value="Show me data">Punjab</option>
-                                            <option class="select-option" value="Show me data">Rajasthan</option>
-                                            <option class="select-option" value="Show me data">Sikkim</option>
-                                            <option class="select-option" value="Show me data">Tamil Nadu</option>
-                                            <option class="select-option" value="Show me data">Telengana</option>
-                                            <option class="select-option" value="Show me data">Tripura</option>
-                                            <option class="select-option" value="Show me data">Uttar Pradesh</option>
-                                            <option class="select-option" value="Show me data">Uttarakhand</option>
-                                            <option class="select-option" value="Show me data">West Bengal</option>
-                                            <option class="select-option" value="Show me data">Andaman & Nicobar Islands</option>
-                                            <option class="select-option" value="Show me data">Chandigarh</option>
-                                            <option class="select-option" value="Show me data">Dadra and Nagar Haveli and Daman and Diu</option>
-                                            <option class="select-option" value="Show me data">Delhi</option>
-                                            <option class="select-option" value="Show me data">Lakshadweep</option>
-                                            <option class="select-option" value="Show me data">Puducherry</option>
+                                            <option class="select-option" value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option class="select-option" value="Arunachal Pradesh">Arunachal Pradesh
+                                            </option>
+                                            <option class="select-option" value="Assam">Assam</option>
+                                            <option class="select-option" value="Bihar">Bihar</option>
+                                            <option class="select-option" value="Chhatisgarh">Chhatisgarh</option>
+                                            <option class="select-option" value="Goa">Goa</option>
+                                            <option class="select-option" value="Gujrat">Gujrat</option>
+                                            <option class="select-option" value="Haryana">Haryana</option>
+                                            <option class="select-option" value="Himachal Pradesh">Himachal Pradesh
+                                            </option>
+                                            <option class="select-option" value="Jharkhand">Jharkhand</option>
+                                            <option class="select-option" value="">Karnataka</option>
+                                            <option class="select-option" value="">Kerala</option>
+                                            <option class="select-option" value="">Madhya Pradesh</option>
+                                            <option class="select-option" value="">Maharastra</option>
+                                            <option class="select-option" value="">Manipur</option>
+                                            <option class="select-option" value="">Meghalaya</option>
+                                            <option class="select-option" value="">Mizoram</option>
+                                            <option class="select-option" value="">Nagaland</option>
+                                            <option class="select-option" value="">Odisha</option>
+                                            <option class="select-option" value="">Punjab</option>
+                                            <option class="select-option" value="">Rajasthan</option>
+                                            <option class="select-option" value="">Sikkim</option>
+                                            <option class="select-option" value="">Tamil Nadu</option>
+                                            <option class="select-option" value="">Telengana</option>
+                                            <option class="select-option" value="">Tripura</option>
+                                            <option class="select-option" value="">Uttar Pradesh</option>
+                                            <option class="select-option" value="">Uttarakhand</option>
+                                            <option class="select-option" value="">West Bengal</option>
+                                            <option class="select-option" value="">Andaman & Nicobar Islands</option>
+                                            <option class="select-option" value="">Chandigarh</option>
+                                            <option class="select-option" value="">Dadra and Nagar Haveli and Daman and Diu</option>
+                                            <option class="select-option" value="">Delhi</option>
+                                            <option class="select-option" value="">Lakshadweep</option>
+                                            <option class="select-option" value="">Puducherry</option>
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
                                         <input style="padding-left: 1em;
                                         padding-bottom: 1em;padding-top: 3em;" class="form-control-input"  type="file" id="myfile" name="myfile" required>
-                                        <label class="label-control" for="pemail">Upload your work</label>
+                                        <label class="label-control" for="pemail">Upload your resume</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <input type="text" class="form-control-input" id="pname" required>
                                         <label class="label-control" for="pname">Why do you want to attend a career counselling?</label>
                                         <div class="help-block with-errors"></div>
-                                    </div>
+                                    </div> -->
                                     
                                     <div class="form-group">
-                                        <select class="form-control-select" id="pselect" required>
+                                        <select class="form-control-select" id="pselect" name="exp" required>
                                             <option class="select-option" value="" disabled selected>Experience</option>
-                                            <option class="select-option" value="Delete data">Fresher</option>
-                                            <option class="select-option" value="Show me data">Experienced</option>
+                                            <option class="select-option" value="Fresher">Fresher</option>
+                                            <option class="select-option" value="Experienced">Experienced</option>
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control-input" id="pname" required>
+                                        <input type="number" class="form-control-input" id="pname" name="passout" required>
                                         <label class="label-control" for="pname">Passout year</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control-select" id="pselect" required>
+                                        <input type="text" class="form-control-input" id="college" name="college"
+                                            required>
+                                        <label class="label-control" for="college">College Name</label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control-input" id="ref_id" name="ref_id"
+                                            required>
+                                        <label class="label-control" for="ref_id">Referral ID</label>
+                                        <span>***Enter referral id mentioned by individual or college***</span>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control-select" id="pselect" name="relocation" required>
                                             <option class="select-option" value="" disabled selected>Are you ready to relocate?</option>
-                                            <option class="select-option" value="Delete data">Yes</option>
-                                            <option class="select-option" value="Show me data">No</option>
+                                            <option class="select-option" value="Yes">Yes</option>
+                                            <option class="select-option" value="No">No</option>
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control-select" id="pselect" required>
+                                        <select class="form-control-select" id="pselect" name="findus" required>
                                             <option class="select-option" value="" disabled selected>Where did you find us?</option>
-                                            <option class="select-option" value="Delete data">Through our employee</option>
-                                            <option class="select-option" value="Show me data">Through Social Media</option>
-                                            <option class="select-option" value="Show me data">Through College</option>
+                                            <option class="select-option" value="Through our employee">Through our employee</option>
+                                            <option class="select-option" value="Through Social Media">Through Social
+                                                Media</option>
+                                            <option class="select-option" value="Through College">Through College
+                                            </option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control-select" id="option1" name="option1" required>
+                                            <option class="select-option" value="" disabled selected>Intern With Us?</option>
+                                            <option class="select-option" value="4">1 Month - Eligible for Rs.1000 Stipend</option>
+                                            <option class="select-option" value="2">2 Weeks - Eligible for Rs.375 Stipend</option>
+                                            <option class="select-option" value="0">No , i'll pass the opportunity</option>
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -267,12 +309,11 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                                        <button type="submit" class="form-control-submit-button">SUBMIT & PAY</button>
                                     </div>
                                     <div class="form-message">
                                         <div id="pmsgSubmit" class="h3 text-center hidden"></div>
                                     </div>
-                                    <a class="btn-outline-reg back" style="margin-left: 1em;" href="">Pay Here</a>
                                 </form>
                             </div> <!-- end of form container -->
                             <!-- end of privacy form -->

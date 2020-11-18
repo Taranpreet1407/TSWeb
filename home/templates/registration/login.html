@@ -1,0 +1,17 @@
+<html>
+    <h2>
+        LOGIN
+    </h2>
+    <h4>Use your Email or Intern ID to login!</h4>
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <label>Username
+            <input type="text" name="username" id="username">
+        </label><br><br>
+
+        <label>Password
+            <input type="password" name="password" id="password">
+        </label><br><br>
+        <input type="submit"  value="Login">  
+    </form>
+</html>
