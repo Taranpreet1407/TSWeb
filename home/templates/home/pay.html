@@ -3,7 +3,11 @@
 <div class="text-center mx-auto">
     <form action="{% url 'status' %}" method="POST">
       {% csrf_token %}
-      <h2>UI for showing <del>1000</del>51</h2>
+      <h2>UI for showing <del>1000</del>51</h2> 
+      <div class="container">
+                    
+        <img src="{% static 'images/CODE.jpg' %}" class="img-fluid" alt="Responsive image">
+        </div>
     <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="{{context.key}}"
