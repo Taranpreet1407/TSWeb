@@ -22,38 +22,70 @@
     
     <!-- Styles -->
     
-    <link rel="stylesheet" href="{% static 'home/css/wickedcss.min.css' %}"/>
+    <link rel="stylesheet" href="css/wickedcss.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet"  href="{% static 'home/css/bootstrap.css' %}"/>
+    <link rel="stylesheet"  href="css/bootstrap.css">
     
-    <link rel="stylesheet"  href="{% static 'home/css/fontawesome-all.css' %}" />
+    <link rel="stylesheet"  href="css/fontawesome-all.css" >
     
-    <link rel="stylesheet"  href="{% static 'home/css/swiper.css' %}"/>
-    <link rel="stylesheet"  href="{% static 'home/css/magnific-popup.css' %}" />
+    <link rel="stylesheet"  href="css/swiper.css">
+    <link rel="stylesheet"  href="css/magnific-popup.css" >
     
-    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}" />
+    <link rel="stylesheet" href="css/styles.css">
+   <style>
+   .modal-body .form-horizontal .col-sm-2,
+   .modal-body .form-horizontal .col-sm-10 {
+       width: 100%
+   }
+   
+   .modal-body .form-horizontal .control-label {
+       text-align: left;
+   }
+   .modal-body .form-horizontal .col-sm-offset-2 {
+       margin-left: 15px;
+   }
+   </style>
+   <script>
+   function populate(s1,s2){
+     var s1 = document.getElementById(s1);
+     var s2 = document.getElementById(s2);
+     s2.innerHTML = "";
+     if(s1.value == "Chevy"){
+       var optionArray = ["|","Business Development|Business Development","Marketing|Marketing","Graphic Designing|Graphic Designing" , "Event Management|Event Management" ,"Software Development|Software Development" , "Content Writing|Content Writing" , "Blogging|Blogging" , "Mobile App Development|Mobile App Development" , "Social Media Marketing|Social Media Marketing", "Fundraising|Fundraising" , "Promotion|Promotion" , "Campus Ambassador|Campus Ambassador" , "Operation Management|Operation Management" ,"Student Counselling|Student Counselling" , "Media and Public Relations| Media and Public Relations"];
+     } else if(s1.value == "Dodge"){
+       var optionArray = ["|","Business Development|Business Development","Marketing|Marketing","Human Resource Management|Human Resource Management"];
+     } else if(s1.value == "Ford"){
+       var optionArray = ["|","mustang|Mustang","shelby|Shelby"];
+     }
+     for(var option in optionArray){
+       var pair = optionArray[option].split("|");
+       var newOption = document.createElement("option");
+       newOption.value = pair[0];
+       newOption.innerHTML = pair[1];
+       s2.options.add(newOption);
+     }
+   }
+   </script>
+   
+   
     </head>
  
     <body data-spy="scroll" data-target=".fixed-top">
         
         <!-- Preloader -->
       
-    
-      
-    <body>
-    
-           
-        <!-- Navigation -->
+            <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
                 <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
         
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/talentservelogo.png' %}" alt="alternative"></a>
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/talentservelogo.png" alt="alternative"></a>
                 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,89 +150,207 @@
                  </div> <!-- end of container -->
              </header> <!-- end of ex-header -->
              <!-- end of header -->
-         
-         <div class="reveal-if-active">
-         <div class="col-md-6">
-         <h4>For Intern Registration</h4>
-                                     <!-- Privacy Form -->
-                                     <div class="form-container">
-         
-         <div class="form-group">
-                                                <select class="form-control-select" id="pselect" required>
-                                                    <option class="select-option" value="" disabled selected>Select your Internship</option>
-                                                    <option class="select-option" value="Delete data">Business Development</option>
-                                                    <option class="select-option" value="Show me data">Marketing</option>
-                                                    <option class="select-option" value="Show me data">Social Media Marketing</option>
-                                                    <option class="select-option" value="Show me data">Operation Management</option>
-                                                    <option class="select-option" value="Show me data">Blogging</option>
-                                                    <option class="select-option" value="Show me data">Program Management</option>
-                                                    <option class="select-option" value="Show me data">Content Writing</option>
-                                                    <option class="select-option" value="Show me data">Human Resource Manangement</option>
-                                                    <option class="select-option" value="Show me data">Media and Public Relation</option>
-                                                    <option class="select-option" value="Show me data">Promotion</option>
-                                                    <option class="select-option" value="Show me data">Campus Ambassador</option>
-                                                    <option class="select-option" value="Show me data">Student Counselling</option>
-                                                    <option class="select-option" value="Show me data">Fundraising</option>
-                                                    <option class="select-option" value="Show me data">Graphic Design</option>
-                                                    <option class="select-option" value="Show me data">Event Management</option>
-                                                    <option class="select-option" value="Show me data">Software Development</option>
-                                                    <option class="select-option" value="Show me data">Mobile App Development</option>
-                                                    <option class="select-option" value="Show me data">Volentering</option>
-                                                            
-                                           </select>
-                                                                                 <div class="help-block with-errors"></div>
-                                                                             </div>                   
-                                                            
-               
-                                                                                      </div>                                            
-                                                             <div class="form-group">
-                                                                                                             <button type="submit" class="form-control-submit-button"><a href="signup.html">SUBMIT</button></a>
-                                                                                                         </div>
-                                                                                                         <div class="form-message">
-                                                                                                             <div id="pmsgSubmit" class="h3 text-center hidden"></div>
-                                                                                                         </div>
-        </div>
-        </div>
         
-         </div>
          
-         <div class="col-md-6">
-                  <h4>Prospect Employee</h4>
-                                              <!-- Privacy Form -->
-                                              <div class="form-container">
+         
+         
+                                               
+                                                                      
                   
-                  <div class="form-group">
-                                                         <select class="form-control-select" id="pselect" required>
-                                                             <option class="select-option" value="" disabled selected>Select your Field</option>
-                                                             <option class="select-option" value="Delete data">Business Development</option>
-                                                             <option class="select-option" value="Show me data">Marketing</option>
-                                                             <option class="select-option" value="Show me data">Human Resource Management</option>
-                                                         
-          </select>
-                                                                                          <div class="help-block with-errors"></div>
-                                                                                      </div>                   
-                                                                     
-                        
-                                                                                               </div>                                            
-                                                                      <div class="form-group">
-                                                                                                                      <button type="submit" class="form-control-submit-button"><a href="">SUBMIT</button></a>
-                                                                                                                  </div>
-                                                                                                                  <div class="form-message">
-                                                                                                                      <div id="pmsgSubmit" class="h3 text-center hidden"></div>
-                                                                                                                  </div>
-                 </div>
-                 </div>
+                  
                  
-                  </div>
          
+          
+                  
+        <h4 align="center">
+           Registeration Form
+        </h4>
+        
+        <!-- Modal -->
+        
+                        <form class="form-horizontal" role="form">
+                       
+        
          
+                                     <!-- Privacy Form -->
+                                     
+                                     
+                                     
+                                     <div class="form-group">
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     <div class="form-container">
+                                         <form id="privacyForm" data-toggle="validator" data-focus="false">
+                                           <div class="col-md-6">
+                                             <div class="form-group">
+                                             
+                                             
+                                             
+                                             
+                                             
+                                             
+                                             
+                                             
+                                             
+                                              <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">Name</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                             
+                                             <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')"  class="form-control-input" >
+                                               <option value="">Select Category</option>
+                                               <option value="Chevy">Intern</option>
+                                               <option value="Dodge">Prospect Employee</option>
+                                              
+                                             </select>
+                                             <hr />
+                                             
+                                             <select id="slct2" name="slct2"  class="form-control-input" >
+                                              <option value="">Choose Sub Category</option>
+                                             </select>
+                                             
+                                             <hr />
+                                             
+                                             
+                                             </div>
+                                         
+                                             
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">Date of Birth</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">College Name
+                                                 </label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">Stream/Department</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
          
+                                             <div class="form-group">
+                                                 <input type="email" class="form-control-input" id="pemail" required>
+                                                 <label class="label-control" for="pemail">Email</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">City</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <select class="form-control-select" id="pselect" required>
+                                                     <option class="select-option" value="" disabled selected>State</option>
+                                                     <option class="select-option" value="Delete data">Andhra Pradesh</option>
+                                                     <option class="select-option" value="Show me data">Arunachal Pradesh</option>
+                                                     <option class="select-option" value="Show me data">Assam</option>
+                                                     <option class="select-option" value="Show me data">Bihar</option>
+                                                     <option class="select-option" value="Show me data">Chhatisgarh</option>
+                                                     <option class="select-option" value="Show me data">Goa</option>
+                                                     <option class="select-option" value="Show me data">Gujurat</option>
+                                                     <option class="select-option" value="Show me data">Haryana</option>
+                                                     <option class="select-option" value="Show me data">Himachal Pradesh</option>
+                                                     <option class="select-option" value="Show me data">Jharkhand</option>
+                                                     <option class="select-option" value="Show me data">Karnataka</option>
+                                                     <option class="select-option" value="Show me data">Kerala</option>
+                                                     <option class="select-option" value="Show me data">Madhya Pradesh</option>
+                                                     <option class="select-option" value="Show me data">Maharastra</option>
+                                                     <option class="select-option" value="Show me data">Manipur</option>
+                                                     <option class="select-option" value="Show me data">Meghalaya</option>
+                                                     <option class="select-option" value="Show me data">Mizoram</option>
+                                                     <option class="select-option" value="Show me data">Nagaland</option>
+                                                     <option class="select-option" value="Show me data">Odisha</option>
+                                                     <option class="select-option" value="Show me data">Punjab</option>
+                                                     <option class="select-option" value="Show me data">Rajasthan</option>
+                                                     <option class="select-option" value="Show me data">Sikkim</option>
+                                                     <option class="select-option" value="Show me data">Tamil Nadu</option>
+                                                     <option class="select-option" value="Show me data">Telengana</option>
+                                                     <option class="select-option" value="Show me data">Tripura</option>
+                                                     <option class="select-option" value="Show me data">Uttar Pradesh</option>
+                                                     <option class="select-option" value="Show me data">Uttarakhand</option>
+                                                     <option class="select-option" value="Show me data">West Bengal</option>
+                                                     <option class="select-option" value="Show me data">Andaman & Nicobar Islands</option>
+                                                     <option class="select-option" value="Show me data">Chandigarh</option>
+                                                     <option class="select-option" value="Show me data">Dadra and Nagar Haveli and Daman and Diu</option>
+                                                     <option class="select-option" value="Show me data">Delhi</option>
+                                                     <option class="select-option" value="Show me data">Lakshadweep</option>
+                                                     <option class="select-option" value="Show me data">Puducherry</option>
+                                                 </select>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input style="padding-left: 1em;
+                                                 padding-bottom: 1em;padding-top: 3em;" class="form-control-input"  type="file" id="myfile" name="myfile" required>
+                                                 <label class="label-control" for="pemail">Upload your work</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">Why do you want to attend a career counselling?</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             
+                                             <div class="form-group">
+                                                 <select class="form-control-select" id="pselect" required>
+                                                     <option class="select-option" value="" disabled selected>Experience</option>
+                                                     <option class="select-option" value="Delete data">Fresher</option>
+                                                     <option class="select-option" value="Show me data">Experienced</option>
+                                                 </select>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <input type="text" class="form-control-input" id="pname" required>
+                                                 <label class="label-control" for="pname">Passout year</label>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <select class="form-control-select" id="pselect" required>
+                                                     <option class="select-option" value="" disabled selected>Are you ready to relocate?</option>
+                                                     <option class="select-option" value="Delete data">Yes</option>
+                                                     <option class="select-option" value="Show me data">No</option>
+                                                 </select>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <select class="form-control-select" id="pselect" required>
+                                                     <option class="select-option" value="" disabled selected>Where did you find us?</option>
+                                                     <option class="select-option" value="Delete data">Through our employee</option>
+                                                     <option class="select-option" value="Show me data">Through Social Media</option>
+                                                     <option class="select-option" value="Show me data">Through College</option>
+                                                 </select>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group checkbox">
+                                                 <input type="checkbox" id="pterms" value="Agreed-to-Terms" required>I have read and agree to TalentServe's <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                                                 <div class="help-block with-errors"></div>
+                                             </div>
+                                             <div class="form-group">
+                                                 <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                                             </div>
+                                             <div class="form-message">
+                                                 <div id="pmsgSubmit" class="h3 text-center hidden"></div>
+                                             </div>
          
-         
-         
-         
-         
-         
+         </div>
          
          
          
