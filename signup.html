@@ -35,18 +35,11 @@
 .register-left img{
     margin-top: 15%;
     margin-bottom: 5%;
-    width: 25%;
+    width: 54%;
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
+
 .register-left p{
     font-weight: lighter;
     padding: 12%;
@@ -116,16 +109,14 @@
 </style></head><body><div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
-                        <img src="{% static 'images/talentservelogo.png' %}" alt="">
+                        <img src="images/talentservelogo.png" alt="">
                         <h3>Welcome To <br> TalentServe</h3>
                         <p></p>
                         <input type="submit" name="" value="Signup"><br>
                     </div>
                     <div class="col-md-9 register-right">
                         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">INTERN</a>
-                            </li>
+                            
                             </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -149,15 +140,19 @@
                                                                                </div>
                                                                                <div class="container">
                                                                                <div class="row">
-                                                                               
+                                                      
+                                                      <ul>                         
                                         <a href="#" class="fb btn">
                                                   <i class="fa fa-facebook fa-fw"></i> Login with Facebook
                                                  </a>
+                                                 </ul>
                                                 <br>
+                                                <ul
                                                 <div class="coloumn">
                                                 <a href="#" class="google btn"><i class="fa fa-google fa-fw">
                                                   </i> Login with Google+
-                                                </a>
+                                                </a></ul>
+                                                </li>
                                               </div></div>
                                               </div>
                                               
